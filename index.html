@@ -1,93 +1,145 @@
-</style>
-<body>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Food - Sushi</title>
   <style>
-     body{
-         text-align: center;
-         background-image: linear-gradient(rgb(220, 118, 51), rgb(229, 152, 102));
-         min-width: 100%;
-         min-height: 100%;
+    body {
+      text-align: center;
+      background-image: linear-gradient(rgb(250, 200, 152), rgb(236, 88, 0));
+      min-width: 100%;
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Refined Styling for H1 */
+    h1 {
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      font-size: 2.5em; /* Larger font size for emphasis */
+      color: #FF5722; /* Vibrant color for contrast */
+      margin-top: 30px;
+      text-transform: uppercase; /* Uppercase text for more impact */
+      letter-spacing: 2px; /* Slightly spaced letters for a clean look */
+      padding: 10px 20px;
+      border-bottom: 4px solid #FF5722; /* Elegant underline for style */
+    }
+
+    /* Additional Styles for Specific Sections */
+    h1.orange-title {
+      color: #FF5722;
+      font-size: 2em;
+      letter-spacing: 1px;
+      border-bottom: 3px solid #FF5722;
+      padding-bottom: 10px;
+    }
+
+    /* Styling the Back to Top Button */
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #FF5722;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 18px;
+      cursor: pointer;
+      display: none; /* Hidden by default */
+      transition: opacity 0.3s ease;
+    }
+
+    /* Show the button when the user scrolls down */
+    #back-to-top:hover {
+      background-color: #ff7043;
+    }
+
+    /* Styling the Footer */
+    footer {
+      background-color: #FF5722;
+      color: white;
+      text-align: center;
+      padding: 7px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 1em;
+      font-family: 'Arial', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>My Website</h1>
+  
+  <h1>This website contains facts about my favorite food: SUSHI!</h1>
+
+  <img src="https://t3.ftcdn.net/jpg/05/84/70/66/360_F_584706614_UbhKxsRjz6hAkuCVWz2fyaLfdE61AN7m.jpg" alt="Sushi Image">
+  <br><br>
+
+  <p>
+    Sushi is a delicious Japanese dish that combines fresh, high-quality ingredients with delicate flavors. Made with vinegared rice, fresh fish, and sometimes vegetables or seaweed, sushi offers a perfect balance of textures and tastes. Whether served as nigiri, sashimi, or rolls, sushi is enjoyed by people all over the world for its light, refreshing qualities and its ability to highlight the natural flavors of the ingredients. It's not just a meal, but an art form that brings people together to share in a unique and flavorful experience.
+  </p>
+
+  <h1 class="orange-title">What does it taste like?</h1>
+  <p>
+    Sushi has a mix of fresh, clean flavors. The rice is slightly tangy and sweet, and the fish tastes light and fresh, with a hint of saltiness. The seaweed adds a crunchy, earthy flavor, while the wasabi gives a little heat. Soy sauce adds a salty, savory kick. All together, it’s a delicious balance of smooth, fresh, and savory tastes.
+  </p>
+
+  <h1 class="orange-title">Where does Sushi originate from?</h1>
+  <p>
+    Sushi comes from Japan and has been around for over a thousand years. It started as a way to preserve fish by fermenting it with rice. Eventually, people began eating the rice with the fish, instead of just using it for preservation. By the 17th century, sushi started to look more like what we eat today: fresh fish or seafood served on vinegared rice. While it began in Japan, sushi has become popular all over the world, with many different versions and styles being created.
+  </p>
+
+  <h1 class="orange-title">Types of Sushi!</h1>
+  <p>
+    Sushi offers a variety of flavors, each depending on the ingredients and preparation. The rice, often seasoned with a bit of vinegar, sugar, and salt, provides a slightly tangy and sweet base. The fish can range from mild and buttery, like salmon and yellowtail, to more robust and slightly salty, like mackerel or tuna. Some sushi also features seaweed (nori), which adds a crisp, earthy taste. For added spice, wasabi can be used, delivering a sharp, pungent heat that complements the fish. Soy sauce adds a savory, umami depth to the overall flavor. Each bite of sushi blends these tastes, creating a balanced, refreshing, and sometimes bold experience.
+  </p>
+
+  <h1 class="orange-title">Cultures of Sushi!</h1>
+  <p>
+    Sushi is an important part of Japanese culture, where it’s seen as both a meal and an art form. Chefs spend years perfecting their skills in making sushi, and there are specific customs for eating it. While sushi began in Japan, it has spread worldwide, with different countries adding their own twists, like the California roll in the U.S. Despite these variations, the focus on fresh ingredients and balanced flavors remains central to sushi culture everywhere.
+  </p>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/IUs7jJxSUUo?si=f94yRb5sPWDiNYNz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <br>
+  
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfOe-QuuzDMNVmdLBheAY2kwkvnz1inJoEwmXyegAI8VQHzzg/viewform?embedded=true" width="640" height="672" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" onclick="scrollToTop()">↑</button>
+
+  <script>
+    // Get the button
+    const backToTopButton = document.getElementById('back-to-top');
+
+    // Show the button when user scrolls down
+    window.onscroll = function() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
       }
-  </style>
-</head>
+    };
 
-<body>
-<h1>My Website</h1>
-
-
-
-</body>
-
-</html>
-
-
-
-</body>
-
-</html>
-
-  </style>
-</head>
-
-<body>
-<h1>This website contains facts about my favorite food SUSHI! </h1>
-
-
-
-</body>
-
-</html>
-                               <img src=data:image/jpeg;base64,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>
-                               <br>
+    // Function to scroll to the top of the page
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 <br>
-
-
-
-<body>
-Sushi is a delicious Japanese dish that combines fresh, high-quality ingredients with delicate flavors. Made with vinegared rice, fresh fish, and sometimes vegetables or seaweed, sushi offers a perfect balance of textures and tastes. Whether served as nigiri, sashimi, or rolls, sushi is enjoyed by people all over the world for its light, refreshing qualities and its ability to highlight the natural flavors of the ingredients. It's not just a meal, but an art form that brings people together to share in a unique and flavorful experience.
+<br>
+<br>
+<br>
+<br>
+<br>
+  <!-- Footer -->
+  <footer>
+    Created by Shreya Bhalla
+  </footer>
 </body>
 
-<h1 class="orange-title">What does it taste like?</h1>
-
-
-
-</body>
-Sushi has a mix of fresh, clean flavors. The rice is slightly tangy and sweet, and the fish tastes light and fresh, with a hint of saltiness. The seaweed adds a crunchy, earthy flavor, while the wasabi gives a little heat. Soy sauce adds a salty, savory kick. All together, it’s a delicious balance of smooth, fresh, and savory tastes.
-</>body
-
-<h1 class="orange-title">Where does Sushi orignate from?</h1>
-
-
-
-<body>
-Sushi comes from Japan and has been around for over a thousand years. It started as a way to preserve fish by fermenting it with rice. Eventually, people began eating the rice with the fish, instead of just using it for preservation. By the 17th century, sushi started to look more like what we eat today: fresh fish or seafood served on vinegared rice. While it began in Japan, sushi has become popular all over the world, with many different versions and styles being created.
-</body>
-
-<h1 class="orange-title">Types of Sushi! </h1>
-
-</body>
-Sushi offers a variety of flavors, each depending on the ingredients and preparation. The rice, often seasoned with a bit of vinegar, sugar, and salt, provides a slightly tangy and sweet base. The fish can range from mild and buttery, like salmon and yellowtail, to more robust and slightly salty, like mackerel or tuna. Some sushi also features seaweed (nori), which adds a crisp, earthy taste. For added spice, wasabi can be used, delivering a sharp, pungent heat that complements the fish. Soy sauce adds a savory, umami depth to the overall flavor. Each bite of sushi blends these tastes, creating a balanced, refreshing, and sometimes bold experience.
-</Body>
-
-<h1 class="orange-title">Cultures of Sushi!</h1>
-
-Sushi is an important part of Japanese culture, where it’s seen as both a meal and an art form. Chefs spend years perfecting their skills in making sushi, and there are specific customs for eating it. While sushi began in Japan, it has spread worldwide, with different countries adding their own twists, like the California roll in the U.S. Despite these variations, the focus on fresh ingredients and balanced flavors remains central to sushi culture everywhere.
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IUs7jJxSUUo?si=f94yRb5sPWDiNYNz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>
